@@ -11,20 +11,22 @@ if (!require (rgdal)) {
    }
 
 library (rgdal)
+library (curl)
    
 
-# Set Working directory
+# Make and Set Working directory
 
 # Relative to Startup Directory
 
+dir.create ("../DataFetch/")
 setwd("../DataFetch/")
 
 
-
+print ("Download is about 2.2 Gb")
 
 if (!file.exists("WBD_National_GDB.zip")) {
 download.file("https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/WBD/National/GDB/WBD_National_GDB.zip",
-	destfile="WBD_National_GDB.zip", method ="wget")
+	destfile="WBD_National_GDB.zip", method ="curl")
 	} else print("File exists (but might need updating)")
 
 
