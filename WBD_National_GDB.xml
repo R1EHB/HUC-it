@@ -9,8 +9,8 @@
         <origin>U.S. Environmental Protection Agency (EPA)</origin>
         <origin>Other Federal, State, and local partners (see dataset specific metadata for details
           ftp://rockyftp.cr.usgs.gov/ngtoc/hydro/outgoing/WBDArchivedMetadata)</origin>
-        <pubdate>20220526</pubdate>
-        <title>USGS National Watershed Boundary Dataset in FileGDB 10.1 format (published 20220526)</title>
+        <pubdate>20220708</pubdate>
+        <title>USGS National Watershed Boundary Dataset in FileGDB 10.1 format (published 20220708)</title>
         <geoform>Vector Digital Data Set</geoform>
       </citeinfo>
     </citation>
@@ -171,7 +171,7 @@
         <srccite>
           <citeinfo>
             <origin>U.S. Geological Survey</origin>
-            <pubdate>20220526</pubdate>
+            <pubdate>20220708</pubdate>
             <title>7.5 Minute Topographic Quadrangle Sheets</title>
             <geoform>Paper Map</geoform>
             <pubinfo>
@@ -198,7 +198,7 @@
         <srccite>
           <citeinfo>
             <origin>U.S. Geological Survey</origin>
-            <pubdate>20220526</pubdate>
+            <pubdate>20220708</pubdate>
             <title>U.S. Geological Survey Digital Raster Graphic (DRG)</title>
             <geoform>Raster Digital Data</geoform>
             <pubinfo>
@@ -226,7 +226,7 @@
         <srccite>
           <citeinfo>
             <origin>U.S. Geological Survey</origin>
-            <pubdate>20220526</pubdate>
+            <pubdate>20220708</pubdate>
             <title>Digital Orthophoto Quads</title>
             <geoform>Raster Digital Data</geoform>
             <pubinfo>
@@ -253,7 +253,7 @@
         <srccite>
           <citeinfo>
             <origin>U.S. Geological Survey</origin>
-            <pubdate>20220526</pubdate>
+            <pubdate>20220708</pubdate>
             <title>250K Hydrologic Unit Boundaries</title>
             <geoform>Vector Digital Data</geoform>
             <pubinfo>
@@ -281,7 +281,7 @@
         <srccite>
           <citeinfo>
             <origin>U.S. Geological Survey</origin>
-            <pubdate>20220526</pubdate>
+            <pubdate>20220708</pubdate>
             <title>National Hydrography Dataset</title>
             <geoform>Vector Digital Data</geoform>
             <pubinfo>
@@ -307,7 +307,7 @@
       <procstep>
         <procdesc>The data for this product are created as follows. All geospatial content is taken from national geospatial databases under the
           stewardship of USGS data programs. The vector data are processed using ESRI ArcGIS software and exported.</procdesc>
-        <procdate>20220526</procdate>
+        <procdate>20220708</procdate>
       </procstep>
       <procstep>
         <procdesc>The original hydrologic unit boundaries were hand-digitized on a digitizing table from the USGS 7.5 minute quadrangles. This process
@@ -1363,7 +1363,7 @@
     </stdorder>
   </distinfo>
   <metainfo>
-    <metd>20220526</metd>
+    <metd>20220708</metd>
     <metc>
       <cntinfo>
         <cntperp>
