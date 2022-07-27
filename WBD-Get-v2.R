@@ -95,7 +95,11 @@ HUC12 <- readOGR(gdb, "WBDHU12")
 keepsHUC12 <- c("huc12","states","name")
 HUC12List <- HUC12@data[keepsHUC12]
 rm (HUC12)
+# Write HUC12 list with names
 write.csv (HUC12List, "HUC12List.csv")
+
+# Write just the HUC12 list
+write.csv (HUC12List$huc12, "HUC12Vector.csv")
 
 HUC14 <- readOGR(gdb, "WBDHU14")
 keepsHUC14 <- c("huc14","states","name")
