@@ -1,0 +1,109 @@
+
+R version 4.2.2 (2022-10-31 ucrt) -- "Innocent and Trusting"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> # Get Current Watershed Boundary Dataset and related files to tease
+> # out HUC codes from the USA and surrounding boundary areas (Canada,
+> # Mexico) into a set of spreadsheets
+> 
+> # Load needed libraries
+> 
+> # Nov 2023: Refactor to replace obsolete rgdal package with sf or terra
+> 
+> 
+> 
+> 
+> if (!require (sf)) {
++    install.packages("sf", repos="https://cloud.r-project.org")
++    }
+> 
+> if (!require (curl)) {
++    install.packages("curl", repos="https://cloud.r-project.org")
++    }
+> 
+> 
+> #library (rgdal)
+> library (sf)
+> library (curl)
+>    
+> 
+> # Make and Set Working directory
+> 
+> # Relative to Startup Directory
+> 
+> dir.create ("../DataFetch/")
+> setwd("../DataFetch/")
+> 
+> 
+> print ("Download is about 2.2 Gb")
+[1] "Download is about 2.2 Gb"
+> 
+> if (!file.exists("WBD_National_GDB.zip")) {
++ download.file("https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/WBD/National/GDB/WBD_National_GDB.zip",
++ 	destfile="WBD_National_GDB.zip", method ="curl")
++ 	} else print("File exists (but might need updating)")
+[1] "File exists (but might need updating)"
+> 
+> 
+> # unzip this thing
+> 
+> # Currently uses a linux system call to unzip
+> system("unzip -n WBD_National_GDB.zip")
+Archive:  WBD_National_GDB.zip
+[1] 0
+> 
+> # Alternative is 
+> # # unzip(zipfile, files = NULL, list = FALSE, overwrite = TRUE,
+> # #      junkpaths = FALSE, exdir = ".", unzip = "internal",
+> # #      setTimes = FALSE)
+> 
+> ### From utils library (?)
+> 
+> 
+> gdb <- path.expand("../DataFetch/WBD_National_GDB.gdb")
+> 
+> 
+> Layers <- st_layers(gdb)
+> 
+> print (Layers)
+Driver: OpenFileGDB 
+Available layers:
+                    layer_name     geometry_type features fields crs_name
+1                      WBDHU12     Multi Polygon   103024     20    NAD83
+2             NWISDrainageLine Multi Line String   127876     12    NAD83
+3                       WBDHU8     Multi Polygon     2413     15    NAD83
+4  NonContributingDrainageLine Multi Line String        0     10    NAD83
+5                       WBDHU4     Multi Polygon      245     15    NAD83
+6                      WBDHU16     Multi Polygon     7202     20    NAD83
+7  NonContributingDrainageArea     Multi Polygon        0     12    NAD83
+8             NWISDrainageArea     Multi Polygon     2733     19    NAD83
+9                       WBDHU6     Multi Polygon      405     15    NAD83
+10                      WBDHU2     Multi Polygon       22     15    NAD83
+11                     WBDHU14     Multi Polygon     8138     20    NAD83
+12                     WBDLine Multi Line String   395027      8    NAD83
+13                     WBDHU10     Multi Polygon    18867     17    NAD83
+14           FeatureToMetadata                NA   440324      3     <NA>
+15           ExternalCrosswalk                NA        0      7     <NA>
+16                       HUMod                NA       23      5     <NA>
+17           MetaProcessDetail                NA     1765     16     <NA>
+18            MetaSourceDetail                NA     1768     27     <NA>
+19        ProcessingParameters                NA        2      2     <NA>
+20                UpdateStatus                NA        0      2     <NA>
+> 
+> # HUC2 <- st_read(gdb)  #hu2 layer
+> q()
