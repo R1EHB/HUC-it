@@ -31,6 +31,7 @@ library (curl)
 # Relative to Startup Directory
 
 dir.create ("../DataFetch/")
+dir.create("../HUC-Data-Lists/")
 setwd("../DataFetch/")
 
 
