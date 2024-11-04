@@ -4,7 +4,7 @@
 "3","1211","TX","Nueces-Southwestern Texas Coastal",74556.89,18423392
 "4","1806","CA","Central California Coastal",34286.96,8472484.56
 "5","1807","CA,MX","Southern California Coastal",35860.72,8861368.04
-"6","1809","CA,NV","Northern Mojave-Mono Lake",73269.29,18105219.89
+"6","1809","CA,NV","Northern Mojave-Mono Lake",73269.3,18105223.06
 "7","1805","CA","San Francisco Bay",13909.9,3437208.65
 "8","1810","CA,MX","Southern Mojave-Salton Sea",44249.01,10934157.74
 "9","1802","CA,OR","Sacramento",72013.16,17794824.3
@@ -12,7 +12,7 @@
 "11","0713","IL","Lower Illinois",46353.21,11454117.4
 "12","0712","IL,IN,MI,WI","Upper Illinois",28205.42,6969704.79
 "13","1702","CN,WA","Upper Columbia",119755.25,29592139.42
-"14","1711","CN,WA","Puget Sound",52956.82,13085902.84
+"14","1711","CN,WA","Puget Sound",52956.78,13085894.65
 "15","0901","CN,ND","Souris",50118.7,12384588.34
 "16","1005","CN,MT","Milk",59843.82,14787716.43
 "17","1703","WA","Yakima",15928.17,3935932.68
@@ -23,7 +23,7 @@
 "22","0416","CN","Northwestern Lake Superior",41029.57,10138617.8
 "23","1310","MX","Rio Conchos",67618.83755654,16708978.6487757
 "24","1311","MX","Rio Salado",60402.54110729,14925792.9619042
-"25","1202","TX","Neches",25901.26,6400335.29
+"25","1202","TX","Neches",25901.26,6400335.32
 "26","1312","MX","Rio San Juan",32796.24198727,8104127.88695426
 "27","1304","MX,NM,TX","Rio Grande-Amistad",84391.04,20853461.55
 "28","1308","MX,TX","Rio Grande-Falcon",32862.83,8120573.83
@@ -41,7 +41,7 @@
 "40","1114","AR,LA,OK,TX","Red-Sulphur",71620.77,17697862.8
 "41","0318","LA,MS","Pearl",22500.88,5560084.16
 "42","0807","LA,MS","Lower Mississippi-Lake Maurepas",15075.38,3725205.16
-"43","1201","LA,TX","Sabine",25511.67,6304066.52
+"43","1201","LA,TX","Sabine",25511.67,6304066.54
 "44","0503","OH,PA,WV","Upper Ohio",34687.17,8571378.12
 "45","1106","KS,OK","Arkansas-Keystone",25394.37,6275080.96
 "46","1107","AR,KS,MO,OK","Neosho-Verdigris",53851.38,13306953.17
@@ -91,7 +91,7 @@
 "90","0431","CN,ME","Lower Saint Lawrence River",6696.92,1654843.55
 "91","0207","DC,MD,PA,VA,WV","Potomac",38018.6,9394591.89
 "92","1207","TX","Lower Brazos",40244.4,9944599.85
-"93","0402","MI,WI","Southern Lake Superior-Lake Superior",18643.86,4606993.01
+"93","0402","MI,WI","Southern Lake Superior",18643.86,4606993.01
 "94","2102","VI","Virgin Islands",1914.7,473131.69
 "95","1507","AZ","Lower Gila",39046.15,9648506.42
 "96","2201","GU","Guam",1476.2,364777.33
@@ -99,7 +99,7 @@
 "98","0709","IL,WI","Rock",28276.17,6987188.77
 "99","1103","CO,KS","Middle Arkansas",53187.91,13143006.95
 "100","1026","CO,KS,NE","Smoky Hill",51569.77,12743156.67
-"101","1204","LA,TX","Galveston Bay-San Jacinto",21543.77,5323577.35
+"101","1204","LA,TX","Galveston Bay-San Jacinto",21543.77,5323577.32
 "102","1210","TX","Central Texas Coastal",47111.13,11641402.9
 "103","0106","MA,ME,NH","Saco",12568.1,3105641.36
 "104","1402","CO","Gunnison",20790.38,5137409.78
@@ -122,7 +122,7 @@
 "121","1029","KS,MO","Gasconade-Osage",48204.01,11911459.83
 "122","1012","MT,NE,SD,WY","Cheyenne",62732.45,15501512.11
 "123","0506","OH","Scioto",16866.72,4167853.83
-"124","1203","TX","Trinity",46483.43,11486295.25
+"124","1203","TX","Trinity",46483.43,11486295.27
 "125","1205","NM,TX","Brazos Headwaters",37559.75,9281208.56
 "126","1003","CN,MT","Missouri-Marias",51422.18,12706686.73
 "127","1010","MT,ND","Lower Yellowstone",35981.46,8891205.51
@@ -135,9 +135,9 @@
 "134","1606","CA,NV","Central Nevada Desert Basins",123604.12,30543216.09
 "135","1605","CA,NV","Central Lahontan",32840.55,8115068.65
 "136","1602","ID,NV,UT,WY","Great Salt Lake",74294.89,18358651.93
-"137","0406","MI","Northeastern Lake Michigan-Lake Michigan",23889.28,5903165.5
+"137","0406","MI","Northeastern Lake Michigan",23889.28,5903165.5
 "138","0409","CN,MI","St. Clair-Detroit",19098.65,4719375.54
-"139","0408","MI","Southwestern Lake Huron-Lake Huron",23665.79,5847939.21
+"139","0408","MI","Southwestern Lake Huron",23665.79,5847939.22
 "140","0403","MI,WI","Northwestern Lake Michigan",53659.17,13259458.07
 "141","0108","CN,CT,MA,ME,NH,VT","Connecticut",29173.58,7208941.99
 "142","0102","CN,ME","Penobscot",22299.6,5510345.83

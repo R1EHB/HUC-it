@@ -7,7 +7,7 @@ metadata for the version of the dataset pulled (rolling date, see
 below).
 
 HUCxList.csv are the resulting data pulled from the WBD by this code
-(Using WBD version of June 8, 2024) at the x HUC level, where x is one
+(Using WBD version of September 10, 2024) at the x HUC level, where x is one
 of {2,4,6,8,10,12,14,16}.
 
 

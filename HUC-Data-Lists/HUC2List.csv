@@ -1,5 +1,5 @@
 "","huc2","states","name","areasqkm","areaacres"
-"1","12","LA,NM,TX","Texas-Gulf Region",474542.91,117262002.35
+"1","12","LA,NM,TX","Texas-Gulf Region",474542.91,117262002.41
 "2","21","PR","Caribbean Region",15567.35,3846772.28
 "3","20","HI","Hawaii Region",28972.31,7159207.29
 "4","22","AS,GU","South Pacific Region",8194.77,2024968.95
@@ -11,10 +11,10 @@
 "10","14","AZ,CO,NM,UT,WY","Upper Colorado Region",293569.02,72542420.75
 "11","11","AR,CO,KS,LA,MO,NM,OK,TX","Arkansas-White-Red Region",642212.68,158694069.54
 "12","16","CA,ID,NV,OR,UT,WY","Great Basin Region",367048.97,90699696.71
-"13","18","CA,MX,NV,OR","California Region",436625.46,107892404.27
+"13","18","CA,MX,NV,OR","California Region",436625.47,107892407.44
 "14","15","AZ,CA,MX,NM,NV,UT","Lower Colorado Region",424356.02,104860563.11
 "15","09","CN,MN,MT,ND,SD","Souris-Red-Rainy Region",259212.86,64052836.23
-"16","17","CA,CN,ID,MT,NV,OR,UT,WA,WY","Pacific Northwest Region",836516.85,206707632.28
+"16","17","CA,CN,ID,MT,NV,OR,UT,WA,WY","Pacific Northwest Region",836516.82,206707624.1
 "17","04","CN,IL,IN,ME,MI,MN,NH,NY,OH,PA,VT,WI","Great Lakes Region",842545.26,208197282.73
 "18","19","AK,CN","Alaska Region",1907514.25,471356619.24
 "19","10","CN,CO,IA,ID,KS,MN,MO,MT,ND,NE,SD,WY","Missouri Region",1349418.5,333448278.03
