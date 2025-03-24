@@ -37,34 +37,57 @@ dir.create ("../DataFetch/")
 dir.create("./HUC-Data-Lists/")
 setwd("../DataFetch/")
 
-base_dir <- "https://prd-tnm.s3.amazonaws.com/index.html?prefix=StagedProducts/Hydrography/WBD/National/"
+# Not right url base for scripting
+# base_dir <- "https://prd-tnm.s3.amazonaws.com/index.html?prefix=StagedProducts/Hydrography/WBD/National"
 
-g_types = as_tibble_col("GDB","GPKG")
+base_dir <- "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/WBD/National"
 
-GDB_fnames <- tibble_row(files="WBD_National_GDB.jpg",
-		        "WBD_National_GDB.xml","WBD_National_GDB.zip")
+g_types = c("/GDB/","/GPKG/")
 
-GPKG_fnames <- tibble_row(files="WBD_National_GPKG.jpg",
-			"WBD_National_GPKG.xml","WBD_National_GPKG.zip")
+GDB_fnames <- c("WBD_National_GDB.jpg",
+		"WBD_National_GDB.xml","WBD_National_GDB.zip")
 
+GPKG_fnames <- c("WBD_National_GPKG.jpg",
+		 "WBD_National_GPKG.xml","WBD_National_GPKG.zip")
+
+
+str (base_dir)
 str (GPKG_fnames)
-
-fnames <- tibble_row (names=GDB_fnames)
-
-print (fnames)
-
-quit()
-
-if (!file.exists("WBD_National_GDB.zip")) {
-download.file("https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/WBD/National/GDB/WBD_National_GDB.zip",
-	destfile="WBD_National_GDB.zip", method ="curl")
-	} else print("File exists (but might need updating)")
+str (GDB_fnames)
+str (g_types)
 
 
-# unzip this thing
+get_file <- function(base_dir_, g_type_,f_name_) {
+  compose_filename <- paste(base_dir_,g_type_,f_name_,sep = "")
+  print(compose_filename)
+  print(f_name_)
+  
+  if (!file.exists(f_name_)) {
+    download.file(compose_filename, destfile=f_name_, method = "curl")
+    # Check to see if it is a zip file; if so, unzip it
+    is_zip <- grepl(".zip", f_name_,ignore.case=TRUE)
+
+    if (is_zip) {
+        command_string = paste ("unzip -u",f_name_, sep = " ")
+	system(command_string)
+    }	
+  }
+}
+
+  
+for (a in  1:3) {
+ 
+  get_file(base_dir,g_types[1],GDB_fnames[a])
+    }
+
+for (b in 1:3) {
+  get_file(base_dir,g_types[2],GPKG_fnames[b])
+    }
+  
+
 
 # Currently uses a linux system call to unzip
-system("unzip -n WBD_National_GDB.zip")
+# system("unzip -n WBD_National_GDB.zip")
 
 # Alternative is 
 # # unzip(zipfile, files = NULL, list = FALSE, overwrite = TRUE,
