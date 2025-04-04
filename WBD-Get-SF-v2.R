@@ -122,6 +122,8 @@ HUC16 <- st_read(dsn=gdb,layer="WBDHU16")
 
 # Cluster Write Operations together
 
+## NOTE:: For some pacific island territories, the State is either coded as NA or ''. April 2025
+
 ## Set non-geometric variables to drop and drop geometry
 
 keepsHUC2  <- c("huc2","states","name","areasqkm", "areaacres")
