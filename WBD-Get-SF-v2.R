@@ -9,6 +9,7 @@
 
 # st_layers is part of SF package
 
+# April 2025: Minor refinements
 
 if (!require (sf)) {
    install.packages("sf", repos="https://cloud.r-project.org")
@@ -18,7 +19,14 @@ if (!require (curl)) {
    install.packages("curl", repos="https://cloud.r-project.org")
    }
 
+if (!require (tibble)) {
+   install.packages("tibblecurl", repos="https://cloud.r-project.org")
+   }
 
+if (!require (gpkg)) {
+   install.packages("gpkg", repos="https://cloud.r-project.org")
+   }
+   
 #library (rgdal)
 library (sf)
 library (curl)
@@ -168,14 +176,14 @@ setwd(startup_dir)
 setwd("./HUC-Data-Lists/")
 
 # Write CSV Files
-write.csv (HUC2DF, "HUC2List.csv")
-write.csv (HUC4DF, "HUC4List.csv")
-write.csv (HUC6DF, "HUC6List.csv")
-write.csv (HUC8DF, "HUC8List.csv")
-write.csv (HUC10DF, "HUC10List.csv")
-write.csv (HUC12DF, "HUC12List.csv")
-write.csv (HUC14DF, "HUC14List.csv")
-write.csv (HUC16DF, "HUC16List.csv")
+write.csv (HUC2DF, "National_HUC2List.csv")
+write.csv (HUC4DF, "National_HUC4List.csv")
+write.csv (HUC6DF, "National_HUC6List.csv")
+write.csv (HUC8DF, "National_HUC8List.csv")
+write.csv (HUC10DF, "National_HUC10List.csv")
+write.csv (HUC12DF, "National_HUC12List.csv")
+write.csv (HUC14DF, "National_HUC14List.csv")
+write.csv (HUC16DF, "National_HUC16List.csv")
 
 q()
 

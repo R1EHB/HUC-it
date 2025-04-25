@@ -18,7 +18,7 @@
 ## Use stringr for string splitting function str_split
 library(stringr)
 
-input_file <- '../HUC-it/HUC-Data-Lists/HUC12List.csv'
+input_file <- '../HUC-it/HUC-Data-Lists/National_HUC12List.csv'
 
 GRTS_df <- read.csv(input_file, header = TRUE, sep = ",",
   colClasses=c("character","character","character","character","numeric","numeric"))
@@ -61,6 +61,8 @@ state_abbr_u <- c("CT MA ME NH RI VT")
 
 New_England_HUCs_File  <- '../HUC-it/HUC-Data-Lists/New_England_HUCs.csv'
 ## New_England_HUCs_File     <- '../HUC-it/HUC-Data-Lists/HUC12NewEnglandvector.csv'
+
+
 
 CT_HUCs_File <- '../HUC-it/HUC-Data-Lists/CT_HUCs.csv'
 MA_HUCs_File <- '../HUC-it/HUC-Data-Lists/MA_HUCs.csv'
