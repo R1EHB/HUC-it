@@ -1,36 +1,89 @@
-"","X","huc12","states","name","areasqkm","areaacres"
-"80782","80782","010900030203","RI","Chepachet River",55.41,13691.46
-"80783","80783","010900040501","RI","Moshassuck River",59.72,14757.43
-"80778","80778","010900040502","RI","Woonasquatucket River",132.49,32739.04
-"80784","80784","010900040601","RI","Big River",73.4,18137.49
-"12987","12987","010900040602","RI","Flat River Reservoir",72.23,17847.45
-"15308","15308","010900040603","RI","South Branch Pawtuxet River",43.08,10645.07
-"80792","80792","010900040604","RI","Moswansicut Pond-Huntinghouse Brook",57.43,14191.19
-"15519","15519","010900040605","RI","Barden Reservoir-Ponaganset River",85.34,21089.19
-"80793","80793","010900040606","RI","Scituate Reservoir",100.31,24786.53
-"15309","15309","010900040607","RI","North Branch Pawtuxet River",36.45,9008.1
-"15310","15310","010900040608","RI","Pocasset River",53.23,13154.57
-"41093","41093","010900040609","RI","Pawtuxet River",79.01,19523.99
-"80794","80794","010900040901","RI","Seekonk River-Providence River",85.76,21192.04
-"15314","15314","010900040902","RI","Old Mill Creek-Narragansett Bay",68.21,16854.69
-"15317","15317","010900040903","RI","Greenwich Bay",67.42,16660.17
-"80795","80795","010900040904","RI","Hunt River",64.08,15833.71
-"41128","41128","010900040906","RI","Upper West Passage",74.21,18337.49
-"80796","80796","010900040907","RI","Upper East Passage",75.08,18552.65
-"9178","9178","010900040908","RI","Lower West Passage",117.72,29088.58
-"15311","15311","010900040909","RI","Lower East Passage",82.37,20354.11
-"9179","9179","010900040910","RI","Sakonnet River",144.72,35760.97
-"9177","9177","010900040911","RI","Aquidneck Island-Frontal Atlantic Ocean",24.09,5952.68
-"9180","9180","010900040912","RI","Pettaquamscutt River-Frontal Atlantic Ocean",45.28,11188.26
-"54855","54855","010900041000","RI","Sachuest Bay-Rhode Island Sound",270.36,66807.34
-"11780","11780","010900060101","RI","Saugatucket River",44.59,11018.19
-"11779","11779","010900060102","RI","Point Judith Pond-Frontal Block Island Sound",37.79,9337.83
-"15321","15321","010900060103","RI","Ninigret Pond-Frontal Block Island Sound",86,21251.72
-"54831","54831","010900060104","RI","Point Judith Harbor of Refuge-Block Island Sound",182.35,45059.54
-"9181","9181","010900060201","RI","Block Island",28.36,7007.46
-"54852","54852","010900060202","RI","Rhode Island Sound-Block Island Sound",253.45,62627.83
-"15318","15318","011000070201","RI","Chipuxet River-Pawcatuck River",66.57,16450.83
-"80830","80830","011000070202","RI","Usquepaug River",94.43,23333.15
-"80833","80833","011000070203","RI","Beaver River",31.97,7901.06
-"15319","15319","011000070204","RI","Usquepaug River-Pawcatuck River",54.93,13573.86
-"11781","11781","020302020804","NY,RI","Block Island Sound",628.26,155247.29
+"","X","huc12","states","name","areasqkm","areaacres","sorted_state"
+"1558","1558","010900020502","MA,RI","Westport River",146.07,36094.27,"RI"
+"15581","1558","010900020502","MA,RI","Westport River",146.07,36094.27,"RI"
+"1555","1555","010900020503","MA,RI","Cold Brook-Frontal Rhode Island Sound",50.72,12534.29,"RI"
+"15551","1555","010900020503","MA,RI","Cold Brook-Frontal Rhode Island Sound",50.72,12534.29,"RI"
+"1551","1551","010900020504","MA,RI","Horseneck Beach-Rhode Island Sound",160.93,39767.1,"RI"
+"15511","1551","010900020504","MA,RI","Horseneck Beach-Rhode Island Sound",160.93,39767.1,"RI"
+"15518","15518","010900030202","MA,RI","Clear River",117.32,28990.35,"RI"
+"155181","15518","010900030202","MA,RI","Clear River",117.32,28990.35,"RI"
+"80782","80782","010900030203","RI","Chepachet River",55.41,13691.46,"RI"
+"15306","15306","010900030204","MA,RI","Branch River",68.87,17019.08,"RI"
+"153061","15306","010900030204","MA,RI","Branch River",68.87,17019.08,"RI"
+"80722","80722","010900030205","MA,RI","Mill River",88.97,21986.05,"RI"
+"807221","80722","010900030205","MA,RI","Mill River",88.97,21986.05,"RI"
+"80723","80723","010900030206","MA,RI","Emerson Brook-Blackstone River",88.74,21927.03,"RI"
+"807231","80723","010900030206","MA,RI","Emerson Brook-Blackstone River",88.74,21927.03,"RI"
+"80711","80711","010900030207","MA,RI","Abbott Run",74.12,18314.21,"RI"
+"807111","80711","010900030207","MA,RI","Abbott Run",74.12,18314.21,"RI"
+"12986","12986","010900030208","MA,RI","Peters River-Blackstone River",108.62,26841.61,"RI"
+"129861","12986","010900030208","MA,RI","Peters River-Blackstone River",108.62,26841.61,"RI"
+"42702","42702","010900040401","MA,RI","Ten Mile River",144.27,35650.49,"RI"
+"427021","42702","010900040401","MA,RI","Ten Mile River",144.27,35650.49,"RI"
+"80783","80783","010900040501","RI","Moshassuck River",59.72,14757.43,"RI"
+"80778","80778","010900040502","RI","Woonasquatucket River",132.49,32739.04,"RI"
+"80784","80784","010900040601","RI","Big River",73.4,18137.49,"RI"
+"12987","12987","010900040602","RI","Flat River Reservoir",72.23,17847.45,"RI"
+"15308","15308","010900040603","RI","South Branch Pawtuxet River",43.08,10645.07,"RI"
+"80792","80792","010900040604","RI","Moswansicut Pond-Huntinghouse Brook",57.43,14191.19,"RI"
+"15519","15519","010900040605","RI","Barden Reservoir-Ponaganset River",85.34,21089.19,"RI"
+"80793","80793","010900040606","RI","Scituate Reservoir",100.31,24786.53,"RI"
+"15309","15309","010900040607","RI","North Branch Pawtuxet River",36.45,9008.1,"RI"
+"15310","15310","010900040608","RI","Pocasset River",53.23,13154.57,"RI"
+"41093","41093","010900040609","RI","Pawtuxet River",79.01,19523.99,"RI"
+"42700","42700","010900040701","MA,RI","Palmer River",134.24,33171.4,"RI"
+"427001","42700","010900040701","MA,RI","Palmer River",134.24,33171.4,"RI"
+"42706","42706","010900040702","MA,RI","Barrington River-Warren River",46.54,11499.75,"RI"
+"427061","42706","010900040702","MA,RI","Barrington River-Warren River",46.54,11499.75,"RI"
+"86023","86023","010900040803","MA,RI","Quequechan River",78,19274.09,"RI"
+"860231","86023","010900040803","MA,RI","Quequechan River",78,19274.09,"RI"
+"80794","80794","010900040901","RI","Seekonk River-Providence River",85.76,21192.04,"RI"
+"15314","15314","010900040902","RI","Old Mill Creek-Narragansett Bay",68.21,16854.69,"RI"
+"15317","15317","010900040903","RI","Greenwich Bay",67.42,16660.17,"RI"
+"80795","80795","010900040904","RI","Hunt River",64.08,15833.71,"RI"
+"42697","42697","010900040905","MA,RI","Mount Hope Bay",143.96,35572.59,"RI"
+"426971","42697","010900040905","MA,RI","Mount Hope Bay",143.96,35572.59,"RI"
+"41128","41128","010900040906","RI","Upper West Passage",74.21,18337.49,"RI"
+"80796","80796","010900040907","RI","Upper East Passage",75.08,18552.65,"RI"
+"9178","9178","010900040908","RI","Lower West Passage",117.72,29088.58,"RI"
+"15311","15311","010900040909","RI","Lower East Passage",82.37,20354.11,"RI"
+"9179","9179","010900040910","RI","Sakonnet River",144.72,35760.97,"RI"
+"9177","9177","010900040911","RI","Aquidneck Island-Frontal Atlantic Ocean",24.09,5952.68,"RI"
+"9180","9180","010900040912","RI","Pettaquamscutt River-Frontal Atlantic Ocean",45.28,11188.26,"RI"
+"54855","54855","010900041000","RI","Sachuest Bay-Rhode Island Sound",270.36,66807.34,"RI"
+"11780","11780","010900060101","RI","Saugatucket River",44.59,11018.19,"RI"
+"11779","11779","010900060102","RI","Point Judith Pond-Frontal Block Island Sound",37.79,9337.83,"RI"
+"15321","15321","010900060103","RI","Ninigret Pond-Frontal Block Island Sound",86,21251.72,"RI"
+"54831","54831","010900060104","RI","Point Judith Harbor of Refuge-Block Island Sound",182.35,45059.54,"RI"
+"9181","9181","010900060201","RI","Block Island",28.36,7007.46,"RI"
+"54852","54852","010900060202","RI","Rhode Island Sound-Block Island Sound",253.45,62627.83,"RI"
+"8219","8219","011000010301","CT,MA,RI","Upper Fivemile River",99.44,24572.28,"RI"
+"82191","8219","011000010301","CT,MA,RI","Upper Fivemile River",99.44,24572.28,"RI"
+"82192","8219","011000010301","CT,MA,RI","Upper Fivemile River",99.44,24572.28,"RI"
+"8220","8220","011000010302","CT,RI","Lower Fivemile River",98.16,24256.75,"RI"
+"82201","8220","011000010302","CT,RI","Lower Fivemile River",98.16,24256.75,"RI"
+"8221","8221","011000010501","CT,RI","Upper Moosup River",90.57,22380.37,"RI"
+"82211","8221","011000010501","CT,RI","Upper Moosup River",90.57,22380.37,"RI"
+"80294","80294","011000010502","CT,RI","Quaduck Brook",50.54,12488.67,"RI"
+"802941","80294","011000010502","CT,RI","Quaduck Brook",50.54,12488.67,"RI"
+"15118","15118","011000010503","CT,RI","Lower Moosup River",89.34,22075.7,"RI"
+"151181","15118","011000010503","CT,RI","Lower Moosup River",89.34,22075.7,"RI"
+"80295","80295","011000010601","CT,RI","Upper Pachaug River",98.84,24422.95,"RI"
+"802951","80295","011000010601","CT,RI","Upper Pachaug River",98.84,24422.95,"RI"
+"15307","15307","011000070101","CT,RI","Upper Wood River",158.13,39073.51,"RI"
+"153071","15307","011000070101","CT,RI","Upper Wood River",158.13,39073.51,"RI"
+"80537","80537","011000070102","CT,RI","Lower Wood River",74.09,18308.97,"RI"
+"805371","80537","011000070102","CT,RI","Lower Wood River",74.09,18308.97,"RI"
+"15318","15318","011000070201","RI","Chipuxet River-Pawcatuck River",66.57,16450.83,"RI"
+"80830","80830","011000070202","RI","Usquepaug River",94.43,23333.15,"RI"
+"80833","80833","011000070203","RI","Beaver River",31.97,7901.06,"RI"
+"15319","15319","011000070204","RI","Usquepaug River-Pawcatuck River",54.93,13573.86,"RI"
+"15320","15320","011000070205","CT,RI","Tomaquag Brook-Pawcatuck River",147.71,36499.38,"RI"
+"153201","15320","011000070205","CT,RI","Tomaquag Brook-Pawcatuck River",147.71,36499.38,"RI"
+"80543","80543","011000070301","CT,RI","Ashaway River",72.16,17831.83,"RI"
+"805431","80543","011000070301","CT,RI","Ashaway River",72.16,17831.83,"RI"
+"12985","12985","011000070303","CT,RI","Outlet Pawcatuck River",41.06,10146.23,"RI"
+"129851","12985","011000070303","CT,RI","Outlet Pawcatuck River",41.06,10146.23,"RI"
+"11781","11781","020302020804","NY,RI","Block Island Sound",628.26,155247.29,"RI"
+"8231","8231","020302030000","CT,NY,RI","Long Island Sound",3082.16,761618.25,"RI"
+"82311","8231","020302030000","CT,NY,RI","Long Island Sound",3082.16,761618.25,"RI"
