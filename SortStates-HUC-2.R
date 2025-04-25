@@ -23,9 +23,8 @@ input_file <- '../HUC-it/HUC-Data-Lists/National_HUC12List.csv'
 GRTS_df <- read.csv(input_file, header = TRUE, sep = ",",
   colClasses=c("character","character","character","character","numeric","numeric"))
 
-# head (GRTS_df)
 
-columns =c("X","huc12","states","name","areasqkm","areaacres","sorted_state")
+columns =c("X","huc12","states","name","areasqkm","areaacres")
 
 NE_df = data.frame(matrix(nrow = 0, ncol = length(columns))) 
 colnames(NE_df) = columns
@@ -62,10 +61,10 @@ colnames(Miss_NA_df) = columns
 
 # state_abbr <- c("CT","MA","ME","NH","RI","VT")
 state_abbr_u <- c("CT MA ME NH RI VT") 
-neighbors <- c("NY CN")
+# neighbors <- c("NY CN")
 
-New_England_HUCs_File  <- '../HUC-it/HUC-Data-Lists/New_England_HUCs.csv'
-## New_England_HUCs_File     <- '../HUC-it/HUC-Data-Lists/HUC12NewEnglandvector.csv'
+New_England_HUC12s_File  <- '../HUC-it/HUC-Data-Lists/New_England_HUC12s.csv'
+
 
 
 
@@ -91,21 +90,22 @@ for (i in 1:nrow(GRTS_df)) {
     for (j in 1:length(states_list)) {
         
         if (is.na(states_list[j])) {
-            print ("Here is an NA")
+            # print ("Here is an NA")
             Miss_NA_df <- rbind(Miss_NA_df,GRTS_df[i,])
             
         } else if (!nzchar(states_list[j])) {
-            print ("Here is a blank state")
+            # print ("Here is a blank state")
             Miss_NA_df <- rbind(Miss_NA_df,GRTS_df[i,])
                         
         }
 
 	else {
 
+
             if (grepl(states_list[j], state_abbr_u,ignore.case = TRUE)) {
              	NE_df <- rbind(NE_df,GRTS_df[i,])
-	    	print ("State List is: " )
-	    	print (states_list)
+	    	# print ("State List is: " )
+	    	# print (states_list)
 
             }
 
@@ -124,6 +124,9 @@ for (i in 1:nrow(GRTS_df)) {
     }
 }
 
+
+
+
 ## Write the Missing and 'NA' HUCs to mention to USGS
 
 write.csv(Miss_NA_df, Missing_NA_HUCs_File)
@@ -140,45 +143,46 @@ write.csv(Canada_df, Canada_HUCs_File)
 ## na.last = NA means drop those with NA
 NE_df <- NE_df[order(NE_df$huc12, decreasing = FALSE, na.last = NA, method = "auto"),]
 
-## head (NE_df)
+
 
 
 for (i in 1:nrow(NE_df)) {
     ## Second layer of matches by state for New England States
 
     if (grepl ("CT",NE_df[i,]$states, ignore.case = TRUE)) {
-       	NE_df$sorted_state <- "CT" # Write only one state, our main of interest	
+       	
         CT_df <-rbind(CT_df, NE_df[i,])
-	
+	CT_df$sorted_state <- "CT" 
     }
 
     if (grepl ("MA",NE_df[i,]$states, ignore.case = TRUE)) {
        	NE_df$sorted_state <- "MA" # Write only one state, our main of interest
         MA_df <-rbind(MA_df,NE_df[i,])
-	
+	MA_df$sorted_state <- "MA"	
     }
 
     if (grepl ("ME",NE_df[i,]$states, ignore.case = TRUE)) {
     	NE_df$sorted_state <- "ME" # Write only one state, our main of interest
         ME_df <-rbind(ME_df,NE_df[i,] )
-	
+	ME_df$sorted_state <- "ME" 
     }
 
     if (grepl ("NH",NE_df[i,]$states, ignore.case = TRUE)) {
        	NE_df$sorted_state <- "NH" # Write only one state, our main of interest
         NH_df <-rbind(NH_df,NE_df[i,] )
-	
+	NH_df$sorted_state <- "NH"
     }
 
     if (grepl ("RI",NE_df[i,]$states, ignore.case = TRUE)) {
        	NE_df$sorted_state <- "RI" # Write only one state, our main of interest			
         RI_df <- rbind(RI_df,NE_df[i,] )
-	
+	RI_df$sorted_state <- "RI" 
     }
 
     if (grepl ("VT",NE_df[i,]$states, ignore.case = TRUE)) {
     	NE_df$sorted_state <- "VT" # Write only one state, our main of interest
         VT_df <-rbind(VT_df,NE_df[i,] )
+	VT_df$sorted_state <- "VT" 
   	   
     } 
 }
@@ -196,7 +200,7 @@ NE_df <- unique(NE_df)
 
 # head (NE_df)
 
-write.csv(NE_df,New_England_HUCs_File)
+write.csv(NE_df,New_England_HUC12s_File)
 
 warnings()
 q()
