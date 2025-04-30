@@ -1,0 +1,84 @@
+---
+title: CONUS HUC12 via NHD_plus-EPA
+author: Erik Beck
+date: 2025
+---
+
+
+# Overview/Purpose #
+
+# Test Code #
+
+
+```{r startup}
+
+startup_dir <- getwd()
+
+library (sf)
+
+## library(tibble)
+## library(gpkg)   
+
+
+
+gdb <- path.expand("../DataFetch/EPA-NHD-Plus/NHDPlusV2_WBDSnapshot_EnviroAtlas_CONUS.gdb/NHDPlusV2_WBDSnapshot_EnviroAtlas_CONUS.gdb")
+
+
+Layers <- st_layers(gdb)
+
+print (Layers)
+
+
+
+HUC12_geodb <- st_read(dsn=gdb,layer="NHDPlusV2_WBDSnapshot_EnviroAtlas_CONUS")
+
+head(HUC12_geodb)
+
+```
+## Data Info ##
+
+Columns/Variables are:
+
+* HUC_12  
+* Pct_Land 
+* Shape_Length 
+* Shape_Area
+
+```{r subset}
+keepers <- c("HUC_12","Pct_Land", "Shape_Length", "Shape_Area")
+
+HUC12df_sf  <- subset(HUC12_geodb, select = keepers)
+HUC12df <- st_drop_geometry(HUC12df_sf)
+```
+
+# Write Revised Data in multiple formats #
+
+```{r write}
+setwd(startup_dir)
+
+setwd("./HUC-Data-Lists/NHDplusEPA/")
+
+## Write CSV File
+write.csv (HUC12df, "National_HUC12List.csv")
+
+## Write Feather File
+
+
+## Write Excel File
+
+```
+
+# Quit #
+
+
+q()
+
+
+
+
+
+
+
+
+
+
